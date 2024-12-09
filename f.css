@@ -1,0 +1,200 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .sticky-header {
+            position: sticky;
+            top: 0; /* Sticks to the top */
+            background-color: #ffb806;
+            color: white;
+            padding-top: 10px 20px;
+            text-align: center;
+            z-index: 1000; /* Ensures it stays above other content */
+            font-family: cursive;
+            font-size: 40px;
+            text-align: center;
+            
+        }
+        .logo {
+            width: 100px; /* Adjust the circle size */
+            height: 100px;
+            border-radius: 50%; /* Makes the container circular */
+            overflow: hidden; /* Crops content inside the circle */
+            position: fixed; /* Keeps it fixed to the viewport */
+            bottom: 20px; /* Distance from the bottom of the viewport */
+            right: 20px; /* Distance from the right of the viewport */
+            z-index: 1000; /* Ensures it stays above other elements */
+            background: #fff;
+            border: 2px solid #ccc; /* Optional border */
+        }
+
+        .logo img {
+            width: 100%; /* Stretches image to container's width */
+            height: 100%; /* Stretches image to container's height */
+            object-fit: cover; /* Ensures the image fills the circle properly */
+        }
+
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(230, 150, 31);
+            border-radius: 10px;
+            background-image: url(bg.jpg);
+            background-size: cover;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .article-content {
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .article-content h2 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        .article-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #050505;
+        }
+
+        .article-photo {
+            align-items: center;
+            margin-top: 20px;
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .about-article {
+            margin-top: 30px;
+            background-color: #fce878;
+            padding: 20px;
+            border-radius: 8px;
+            border-radius: 10px;
+        }
+
+        .about-article h3 {
+            font-size: 22px;
+            color: #444;
+        }
+
+        .about-article p {
+            font-size: 16px;
+            color: #666;
+        }
+        
+        .text {
+            font-size: 25px;
+            font-weight: bold;
+            color: #050505; /* Longer duration for more gradual color changes */
+        }
+        .poster{color: white;}
+
+        .logoname {
+            display: flex;
+            align-items: center;
+            justify-content: center;;
+            align-items: center;
+        }
+        .logoname img{ height: 50px;
+            width: auto;
+            border-radius: 8px;}
+
+
+            .hamburger-menu {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                z-index: 1000;
+              }
+              
+              .menu-icon {
+                cursor: pointer;
+                width: 30px;
+                height: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+              }
+              
+              .menu-icon span {
+                display: block;
+                height: 4px;
+                background-color: #333;
+                border-radius: 2px;
+                transition: all 0.3s ease-in-out;
+              }
+              
+              .menu-content {
+                display: none;
+                position: absolute;
+                top: 40px;
+                left: 0;
+                background: #fce87b;
+                border: 1px solid #ddd;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                border-radius: 5px;
+                padding: 10px;
+              }
+              
+              .menu-content ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+              }
+              
+              .menu-content ul li {
+                margin: 10px 0;
+              }
+              
+              .menu-content ul li a {
+                text-decoration: none;
+                color: #333;
+              }
+              
+              .menu-content ul li a:hover {
+                color: #007BFF;
+              }
+              
+              .menu-icon.active span:nth-child(1) {
+                transform: translateY(10px) rotate(45deg);
+              }
+              
+              .menu-icon.active span:nth-child(2) {
+                opacity: 0;
+              }
+              
+              .menu-icon.active span:nth-child(3) {
+                transform: translateY(-10px) rotate(-45deg);
+              }
+              
+              .menu-content.active {
+                display: block;
+              }
+       
