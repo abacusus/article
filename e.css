@@ -1,0 +1,186 @@
+.logoname {
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    align-items: center;
+    background-color: #ffb806;
+    border-radius: 8px;
+  }
+  .logoname img{ height: 50px;
+    width: auto;
+    }
+    .text-container {
+        width: 80%;
+        max-width: 600px;
+        height: 80px;
+        text-align: center;
+        position: absolute; /* Or use fixed for a sticky center */
+        font-size: 1.5rem;
+        color: #948153;
+        border: 4px transparent;
+        border-radius: 8px;
+        overflow: hidden;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+    
+        top: 16%; /* Adjusted for centering */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* True center */
+    }
+  
+  /* Text Animation */
+  .text-container span {
+      position: absolute;
+      opacity: 0; /* Initially hidden */
+      animation: textCycle 10s infinite; /* Increase duration to add a gap */
+  }
+  
+  /* Control timing for each text */
+  .text-container span:nth-child(1) {
+      animation-delay: 0s;
+  }
+  
+  .text-container span:nth-child(2) {
+      animation-delay: 2.5s; /* Adjusted delay */
+  }
+  
+  .text-container span:nth-child(3) {
+      animation-delay: 5s; /* Adjusted delay */
+  }
+  
+  .text-container span:nth-child(4) {
+      animation-delay: 7.5s; /* Adjusted delay */
+  }
+  
+  /* Keyframes for appearing and erasing */
+  @keyframes textCycle {
+      0% {
+          opacity: 0;
+          transform: translateY(10px); /* Small upward motion */
+      }
+      10% {
+          opacity: 1;
+          transform: translateY(0); /* Appears in place */
+      }
+      40% {
+          opacity: 0;
+      }
+      50% {
+          opacity: 0;
+          transform: translateY(-50px); /* Fades out with motion */
+      }
+      100% {
+          opacity: 0; /* Gap before next appears */
+      }
+  }  .articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 120px auto 0; /* Margin-top to move the articles down */
+}
+
+  
+  .article-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .article-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .article-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+  }
+  
+  .article-content {
+      padding: 15px;
+  }
+  
+  .article-title {
+      font-size: 1.25rem;
+      margin: 0;
+      color: #007BFF;
+  }
+  
+  .article-title:hover {
+      text-decoration: underline;
+  }
+  
+  .article-meta {
+      margin: 5px 0;
+      font-size: 0.9rem;
+      color: #555;
+  }
+  
+  .article-description {
+      margin: 10px 0 0;
+      font-size: 1rem;
+      line-height: 1.5;
+  }
+  .articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 120px auto 0; /* Margin-top to move the articles down */
+}
+
+  .article-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .article-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .article-content {
+    padding: 15px;
+  }
+  
+  .article-title {
+    font-size: 1.25rem;
+    margin: 0;
+    color: #007BFF;
+  }
+  
+  .article-title:hover {
+    text-decoration: underline;
+  }
+  
+  .article-meta {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .article-description {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  
